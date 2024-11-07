@@ -13,7 +13,7 @@ class controllerLivro:
   def visualizarLivro(self):
     db = Database('10.28.2.16','suporte','suporte','biblioteca')
     db.conectar()
-    query = Livro('teste','teste','testando', 123).visualizarLivro()
+    query = Livro('teste','teste','testando', 123).visualizarLivro('teste')
     visu = db.visualizarQuery(query)
     for x in visu:
       print(f'Livro: {x}')

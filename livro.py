@@ -24,17 +24,14 @@ class Livro:
       self.status = 'Disponivel'
 
   def inserirLivro(self):
-    query = f'insert into livro(autor, titulo, genero,codigo, status) values ("{self.autor}","{self.titulo}","{self.genero}","{self.cod_livro}","{self.status}")'
-    return query
+    return f'insert into livro(autor, titulo, genero,codigo, status) values ("{self.autor}","{self.titulo}","{self.genero}","{self.cod_livro}","{self.status}")'
   
-  def visualizarLivro(self):
-      query = f'select * from livro'
-      return query
+  def visualizarLivro(self, titulo):
+    return f'select * from livro where titulo = "{titulo}"'
 
-  def updateLivro(self, ctx1, ctx2, ctx3, ctx4):
-      query = f'update livro set {ctx1} = "{ctx2}" where {ctx3} = "{ctx4}"'
-      return query
+  def updateLivro(self, coluna1, valor1, coluna2, valor2):
+    return f'update livro set {coluna1} = "{valor1}" where {coluna2} = "{valor2}"'
+      
 
-  def deleteLivro(self, ctx1, ctx2):
-      query = f'delete from livro where {ctx1} = "{ctx2}"'
-      return query
+  def deleteLivro(self, coluna, valor):
+    return f'delete from livro where {coluna} = "{valor}"'
