@@ -16,7 +16,7 @@ class Database:
       database = self.database
     )
 
-    self.cursor = self.conexao.cursor()
+    self.cursor = self.conexao.cursor(dictionary=True)
 
     if self.conexao.is_connected():
       print('Ta conectado')
