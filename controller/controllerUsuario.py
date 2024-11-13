@@ -1,6 +1,5 @@
-from ..model.database import Database
-from ..model.usuario import Usuario
-import mysql.connector
+from model.Usuario import Usuario
+from model.database import Database
 
 class controllerUsuario:
   def inserirUsuario(self):
