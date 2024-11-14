@@ -35,3 +35,5 @@ class Database:
     self.cursor.execute(msg)
     fetch = self.cursor.fetchall()
     return fetch
+
+Database.__name__ = 'Database'

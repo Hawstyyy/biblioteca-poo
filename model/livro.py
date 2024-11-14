@@ -35,3 +35,5 @@ class Livro:
 
   def deleteLivro(self, coluna, valor):
     return f'delete from livro where {coluna} = "{valor}"'
+
+Livro.__name__ = 'Livro'
