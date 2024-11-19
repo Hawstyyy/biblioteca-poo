@@ -1,6 +1,7 @@
-from livro import Livro
-from database import Database
-import mysql.connector
+import sys
+sys.path[0] += '\\..'
+from model.livro import Livro
+from model.database import Database
 
 class controllerLivro:
   def inserirLivro(self):
