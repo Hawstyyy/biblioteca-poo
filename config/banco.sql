@@ -1,12 +1,12 @@
 create database biblioteca;
 use biblioteca;
 
-   create table usuario(
-        id_usuario int auto_increment primary key,
-        nome varchar(100),
-        cpf varchar(13),
-        telefone varchar(20)
-    );
+create table usuario(
+    id_usuario int auto_increment primary key,
+    nome varchar(100),
+    cpf varchar(13),
+    telefone varchar(20)
+);
 
 
 create table livro(
@@ -18,11 +18,13 @@ create table livro(
     codigo int
     );
 
-    create table emprestimo(
-    id_emprestimo int auto_increment primary key,
-        id_livro int,
-        id_usuario int,
-        foreign key (id_livro) references livro(id_livro),
-        foreign key (id_usuario) references usuario(id_usuario)
-    );
+create table emprestimo(
+id_emprestimo int auto_increment primary key,
+    id_livro int,
+    id_usuario int,
+    nome_usuario varchar(255),
+    titulo_livro varchar(255)
+    foreign key (id_livro) references livro(id_livro),
+    foreign key (id_usuario) references usuario(id_usuario)
+);
  

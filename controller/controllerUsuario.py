@@ -1,6 +1,6 @@
 import sys
 sys.path[0] += '\\..'
-from model.Usuario import Usuario
+from model.usuario import Usuario
 from model.database import Database
 
 class controllerUsuario:
