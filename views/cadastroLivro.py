@@ -1,6 +1,6 @@
 import sys
 from PyQt5 import uic
-from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
+from PyQt5.QtWidgets import QApplication, QMainWindow
 
 ui_file = 'cadastroLivro.ui'
 
