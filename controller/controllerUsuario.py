@@ -2,12 +2,16 @@ from model.usuario import Usuario
 from model.database import Database
 
 class controllerUsuario:
-  def __init__(self) -> None:
+  def __init__(self, nome, email, cpf, telefone) -> None:
     self.db = Database('10.28.2.16','suporte','suporte','biblioteca')
+    self.nome = nome
+    self.email = email
+    self.cpf = cpf
+    self.telefone = telefone
 
   def inserirUsuario(self):
     self.db.conectar()
-    query = Usuario('teste','testando','12312121312',0, '123').inserirUsuario()
+    query = Usuario(self.nome, self.email, self.cpf, self.telefone).inserirUsuario()
     self.db.executarQuery(query)
     self.db.desconectar()
   

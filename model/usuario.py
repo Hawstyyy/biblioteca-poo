@@ -14,7 +14,7 @@ class Usuario:
         self.lista_livros.append(livro.nome)
 
     def inserirUsuario(self):
-        return f'insert into usuario(nome,email,cpf,telefone,admin) values ("{self.nome}","{self.email}" ,"{self.cpf}", "{self.telefone}", "{self.admin}")'
+        return f'insert into usuario(nome,email,cpf,telefone) values ("{self.nome}","{self.email}" ,"{self.cpf}", "{self.telefone}")'
 
     def visualizarUsuario(self, cpf):
         return f'select * from usuario where cpf = {cpf}'

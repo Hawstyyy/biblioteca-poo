@@ -32,7 +32,7 @@
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="nomeCadastro"/>
      </item>
     </layout>
    </widget>
@@ -54,7 +54,7 @@
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QLineEdit" name="lineEdit_2"/>
+      <widget class="QLineEdit" name="cadastroEmail"/>
      </item>
     </layout>
    </widget>
@@ -76,7 +76,7 @@
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QLineEdit" name="lineEdit_3"/>
+      <widget class="QLineEdit" name="cadastroCpf"/>
      </item>
     </layout>
    </widget>
@@ -98,11 +98,11 @@
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QLineEdit" name="lineEdit_4"/>
+      <widget class="QLineEdit" name="telefoneCadastro"/>
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="cadastrarUsuario">
     <property name="geometry">
      <rect>
       <x>340</x>

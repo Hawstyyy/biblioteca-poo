@@ -11,4 +11,9 @@ class controllerEmprestimo:
     self.db.executarQuery(query)
     self.db.desconectar()
   
-  
+  def pegarEmprestimo(self):
+    self.db.conectar()
+    query = Emprestimo('any','any').searchLivro()
+    fetch = self.db.visualizarQuery(query)
+    self.db.desconectar
+    return fetch

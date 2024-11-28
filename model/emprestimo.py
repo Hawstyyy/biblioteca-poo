@@ -3,5 +3,8 @@ class Emprestimo:
     self.livro = livro
     self.usuario = usuario
   
+  def searchLivro(self):
+    return 'select titulo from livro'
+
   def inserirEmprestimo(self):
     return f'insert into emprestimo(nome_usuario, titulo_livro) values ({self.usuario}, {self.livro})'
