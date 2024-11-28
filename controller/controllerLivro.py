@@ -4,10 +4,10 @@ from model.livro import Livro
 from model.database import Database
 
 class controllerLivro:
-  def inserirLivro(self):
+  def inserirLivro(self, autor, titulo, genero, cod_livro, status):
     db = Database('10.28.2.16','suporte','suporte','biblioteca')
     db.conectar()
-    query = Livro('teste','teste','testando', 123).inserirLivro()
+    query = Livro(autor,titulo,genero, cod_livro, status).inserirLivro()
     db.executarQuery(query)
     db.desconectar()
   

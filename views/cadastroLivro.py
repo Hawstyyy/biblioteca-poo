@@ -1,6 +1,7 @@
 import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QMainWindow
+from controller.controllerLivro import controllerLivro
 
 ui_file = 'cadastroLivro.ui'
 
@@ -9,7 +10,6 @@ class MainWindow(QMainWindow):
     super().__init__()
     uic.loadUi(ui_file, self)
     self.botaoTeste.clicked.connect(self.clicked)
-    self.valor = 0
 
   def clicked(self):
     titulo = self.titulo.text()
@@ -17,12 +17,7 @@ class MainWindow(QMainWindow):
     genero = self.genero.text()
     codigo = self.codigo.text()
     status = self.status.currentText()
-    self.valor += 1
-    print(f'''Título - {titulo}
-Autor - {autor}
-Gênero - {genero}
-Código - {codigo}
-Status - {status}''')
+    controllerLivro().inserirLivro(autor, titulo, genero, codigo, status)
   
 if __name__ == '__main__':
   app = QApplication(sys.argv)

@@ -1,12 +1,12 @@
 from usuario import Usuario
 
 class Livro:
-  def __init__(self, autor, titulo, genero, cod_livro):
+  def __init__(self, autor, titulo, genero, cod_livro, status):
     self.autor = autor
     self.titulo = titulo
     self.genero = genero
     self.cod_livro = cod_livro
-    self.status = 'Disponível'
+    self.status = status
     self.usuario = None
   
   def emprestimo_livro(self, usuario: Usuario):
