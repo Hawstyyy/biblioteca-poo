@@ -1,4 +1,4 @@
-from usuario import Usuario
+from model.usuario import Usuario
 
 class Livro:
   def __init__(self, autor, titulo, genero, cod_livro, status):

@@ -35,8 +35,5 @@ class controllerUsuario:
     self.db.conectar()
     query = Usuario(nome, cpf=cpf)
     self.db.desconectar()
-
-controllerUsuario().inserirUsuario()
-controllerUsuario().visualizarUsuario()
-controllerUsuario().atualizarUsuario()
-controllerUsuario().deletarUsuario()
+  
+  

@@ -3,9 +3,9 @@ from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from controller.controllerLivro import controllerLivro
 
-ui_file = 'cadastroLivro.ui'
+ui_file = 'biblioteca-poo\\views\\cadastroLivro.ui'
 
-class MainWindow(QMainWindow):
+class cadastroLivro(QMainWindow):
   def __init__(self):
     super().__init__()
     uic.loadUi(ui_file, self)
@@ -18,9 +18,3 @@ class MainWindow(QMainWindow):
     codigo = self.codigo.text()
     status = self.status.currentText()
     controllerLivro().inserirLivro(autor, titulo, genero, codigo, status)
-  
-if __name__ == '__main__':
-  app = QApplication(sys.argv)
-  window = MainWindow()
-  window.show()
-  sys.exit(app.exec_())

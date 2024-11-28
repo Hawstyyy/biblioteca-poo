@@ -1,5 +1,3 @@
-import sys
-sys.path[0] += '\\..'
 from model.livro import Livro
 from model.database import Database
 
@@ -33,8 +31,3 @@ class controllerLivro:
     query = Livro('teste','teste','testando', 123).deleteLivro('autor', 'teste')
     db.executarQuery(query)
     db.desconectar()
-
-controllerLivro().inserirLivro()
-controllerLivro().visualizarLivro()
-controllerLivro().atualizarLivro()
-controllerLivro().deletarLivro()
