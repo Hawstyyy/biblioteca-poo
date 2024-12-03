@@ -32,18 +32,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QComboBox" name="comboBox">
-       <item>
-        <property name="text">
-         <string>Livro1</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Livro2</string>
-        </property>
-       </item>
-      </widget>
+      <widget class="QComboBox" name="comboBox"/>
      </item>
      <item>
       <widget class="QLabel" name="label_2">
@@ -53,7 +42,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit_2"/>
+      <widget class="QComboBox" name="comboBox_2"/>
      </item>
     </layout>
    </widget>
@@ -68,14 +57,14 @@
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="cadastroEmprestimo">
        <property name="text">
         <string>Cadastrar empréstimo</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="cancelar">
        <property name="text">
         <string>Cancelar</string>
        </property>

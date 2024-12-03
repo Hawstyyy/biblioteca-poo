@@ -40,4 +40,10 @@ class controllerUsuario:
     query = Usuario(nome, cpf=cpf)
     self.db.desconectar()
   
+  def pegarUsuario(self):
+    self.db.conectar()
+    query = Usuario('any', 'any', 'any', 'any').searchUsuario()
+    fetch = self.db.visualizarQuery(query)
+    self.db.desconectar()
+    return fetch
   

@@ -25,4 +25,7 @@ class Usuario:
     def deleteUsuario(self, coluna, valor):
         return f'delete from usuario where {coluna} = "{valor}"'
 
+    def searchUsuario(self):
+        return 'select nome from usuario'
+
 Usuario.__name__ = 'Usuario'

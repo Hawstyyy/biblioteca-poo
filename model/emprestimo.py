@@ -5,6 +5,9 @@ class Emprestimo:
   
   def searchLivro(self):
     return 'select titulo from livro'
+  
+  def searchAll(self):
+    return 'select * from livro'
 
-  def inserirEmprestimo(self):
-    return f'insert into emprestimo(nome_usuario, titulo_livro) values ({self.usuario}, {self.livro})'
+  def inserirEmprestimo(self, usuario, titulo):
+    return f'insert into emprestimo(nome, titulo) values ("{usuario}", "{titulo}");'

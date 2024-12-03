@@ -18,3 +18,4 @@ class cadastroLivro(QMainWindow):
     codigo = self.codigo.text()
     status = self.status.currentText()
     controllerLivro().inserirLivro(autor, titulo, genero, codigo, status)
+    self.close()

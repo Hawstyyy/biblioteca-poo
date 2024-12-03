@@ -31,7 +31,7 @@ class Database:
     self.cursor.execute(msg)
     self.conexao.commit()
 
-  def visualizarQuery(self, msg):
+  def   visualizarQuery(self, msg):
     self.cursor.execute(msg)
     fetch = self.cursor.fetchall()
     return fetch
