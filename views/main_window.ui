@@ -11,7 +11,10 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Gestão de Livros</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(240, 240, 245);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="gridLayoutWidget">
@@ -26,36 +29,51 @@
     <layout class="QGridLayout" name="gridLayout">
      <item row="1" column="1">
       <widget class="QPushButton" name="visualizarLivro">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(100, 150, 255); color: white; border-radius: 10px; font: bold 14px; padding: 10px;</string>
+       </property>
        <property name="text">
-        <string>Visualizar livros</string>
+        <string>Visualizar Livros</string>
        </property>
       </widget>
      </item>
      <item row="0" column="0">
       <widget class="QPushButton" name="cadastroButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(100, 150, 255); color: white; border-radius: 10px; font: bold 14px; padding: 10px;</string>
+       </property>
        <property name="text">
-        <string>Cadastrar livro</string>
+        <string>Cadastrar Livro</string>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
       <widget class="QPushButton" name="cadastroUsuario">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(100, 150, 255); color: white; border-radius: 10px; font: bold 14px; padding: 10px;</string>
+       </property>
        <property name="text">
-        <string>Cadastrar usuario</string>
+        <string>Cadastrar Usuário</string>
        </property>
       </widget>
      </item>
      <item row="1" column="0">
       <widget class="QPushButton" name="cadastroEmprestimo">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(100, 150, 255); color: white; border-radius: 10px; font: bold 14px; padding: 10px;</string>
+       </property>
        <property name="text">
-        <string>Cadastrar emprestimo</string>
+        <string>Cadastrar Empréstimo</string>
        </property>
       </widget>
      </item>
      <item row="2" column="0">
       <widget class="QPushButton" name="visualizarUsuario">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(100, 150, 255); color: white; border-radius: 10px; font: bold 14px; padding: 10px;</string>
+       </property>
        <property name="text">
-        <string>Visualizar usuarios</string>
+        <string>Visualizar Usuários</string>
        </property>
       </widget>
      </item>

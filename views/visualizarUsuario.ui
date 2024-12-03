@@ -11,17 +11,45 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Gerenciamento de Usuários</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="tituloLabel">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>20</y>
+      <width>400</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lista de Usuários</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>0</y>
-      <width>601</width>
-      <height>501</height>
+      <x>50</x>
+      <y>80</y>
+      <width>700</width>
+      <height>400</height>
      </rect>
+    </property>
+    <property name="columnCount">
+     <number>6</number>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
     </property>
     <column>
      <property name="text">
@@ -40,7 +68,7 @@
     </column>
     <column>
      <property name="text">
-      <string>New Column</string>
+      <string>nome</string>
      </property>
     </column>
     <column>
@@ -53,31 +81,40 @@
       <string>admin</string>
      </property>
     </column>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="atualizar">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>512</y>
-      <width>251</width>
-      <height>41</height>
+      <x>220</x>
+      <y>510</y>
+      <width>150</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="text">
      <string>Atualizar</string>
     </property>
+    <property name="styleSheet">
+     <string>background-color: #4CAF50; color: white; font: bold 14px; border-radius: 5px;</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="fechar">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>430</x>
       <y>510</y>
-      <width>251</width>
-      <height>41</height>
+      <width>150</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="text">
      <string>Fechar</string>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #F44336; color: white; font: bold 14px; border-radius: 5px;</string>
     </property>
    </widget>
   </widget>

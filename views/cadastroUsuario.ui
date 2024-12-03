@@ -11,93 +11,82 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Cadastro de Usuário</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="gridLayoutWidget">
+   <widget class="QLabel" name="tituloLabel">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>30</y>
+      <width>400</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cadastro de Usuário</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget">
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>110</y>
+      <y>100</y>
       <width>541</width>
-      <height>41</height>
+      <height>250</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout">
+    <layout class="QFormLayout" name="formLayout">
+     <property name="labelAlignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
      <item row="0" column="0">
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="label_nome">
        <property name="text">
         <string>Nome:</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
+     <item row="0" column="1">
       <widget class="QLineEdit" name="nomeCadastro"/>
      </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="gridLayoutWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>180</y>
-      <width>541</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_2">
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_2">
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_email">
        <property name="text">
-        <string>Email:</string>
+        <string>E-mail:</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
+     <item row="1" column="1">
       <widget class="QLineEdit" name="cadastroEmail"/>
      </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="gridLayoutWidget_3">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>250</y>
-      <width>541</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_3">
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_3">
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_cpf">
        <property name="text">
         <string>CPF:</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
+     <item row="2" column="1">
       <widget class="QLineEdit" name="cadastroCpf"/>
      </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="gridLayoutWidget_4">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>320</y>
-      <width>541</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_4">
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_4">
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_telefone">
        <property name="text">
         <string>Telefone:</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
+     <item row="3" column="1">
       <widget class="QLineEdit" name="telefoneCadastro"/>
      </item>
     </layout>
@@ -105,14 +94,33 @@
    <widget class="QPushButton" name="cadastrarUsuario">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>422</y>
-      <width>301</width>
-      <height>41</height>
+      <x>300</x>
+      <y>380</y>
+      <width>150</width>
+      <height>50</height>
      </rect>
     </property>
     <property name="text">
-     <string>Cadastrar usuário</string>
+     <string>Cadastrar</string>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #4CAF50; color: white; font: bold 14px; border-radius: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="limparCampos">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>380</y>
+      <width>150</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limpar</string>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #F44336; color: white; font: bold 14px; border-radius: 5px;</string>
     </property>
    </widget>
   </widget>

@@ -17,12 +17,6 @@ class Database:
     )
 
     self.cursor = self.conexao.cursor(dictionary=True)
-
-    if self.conexao.is_connected():
-      print('Ta conectado')
-    
-    else:
-        print('Não ta conectado')
   
   def desconectar(self):
     self.conexao.close()

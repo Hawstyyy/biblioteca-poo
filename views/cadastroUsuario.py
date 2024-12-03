@@ -17,6 +17,7 @@ class cadastroUsuario(QMainWindow):
     cpf = self.cadastroCpf.text()
     telefone = self.telefoneCadastro.text()
     controllerUsuario(nome,email,cpf,telefone).inserirUsuario()
+    self.close()
 
 if __name__ == '__main__':
   app = QApplication(sys.argv)

@@ -11,7 +11,10 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Cadastrar Livro</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(240, 240, 245);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="botaoTeste">
@@ -23,8 +26,11 @@
       <height>141</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(100, 150, 255); color: white; border-radius: 20px; font: bold 16px; padding: 10px;</string>
+    </property>
     <property name="text">
-     <string>cadastrar livro</string>
+     <string>Cadastrar Livro</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="titulo">
@@ -36,6 +42,12 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="placeholderText">
+     <string>Insira o título</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white; border: 1px solid rgb(200, 200, 200); border-radius: 5px; padding: 5px;</string>
+    </property>
    </widget>
    <widget class="QLineEdit" name="autor">
     <property name="geometry">
@@ -45,6 +57,12 @@
       <width>231</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Insira o autor</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white; border: 1px solid rgb(200, 200, 200); border-radius: 5px; padding: 5px;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="genero">
@@ -56,18 +74,24 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="placeholderText">
+     <string>Insira o gênero</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white; border: 1px solid rgb(200, 200, 200); border-radius: 5px; padding: 5px;</string>
+    </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>20</x>
       <y>230</y>
-      <width>47</width>
+      <width>100</width>
       <height>13</height>
      </rect>
     </property>
     <property name="text">
-     <string>Genero</string>
+     <string>Gênero</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -75,7 +99,7 @@
      <rect>
       <x>20</x>
       <y>140</y>
-      <width>47</width>
+      <width>100</width>
       <height>13</height>
      </rect>
     </property>
@@ -88,12 +112,12 @@
      <rect>
       <x>20</x>
       <y>60</y>
-      <width>47</width>
+      <width>100</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>Titulo</string>
+     <string>Título</string>
     </property>
    </widget>
    <widget class="QSpinBox" name="codigo">
@@ -111,18 +135,21 @@
     <property name="maximum">
      <number>999999999</number>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white; border: 1px solid rgb(200, 200, 200); border-radius: 5px; padding: 5px;</string>
+    </property>
    </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
       <x>20</x>
       <y>310</y>
-      <width>47</width>
+      <width>100</width>
       <height>13</height>
      </rect>
     </property>
     <property name="text">
-     <string>Codigo</string>
+     <string>Código</string>
     </property>
    </widget>
    <widget class="QComboBox" name="status">
@@ -134,14 +161,17 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white; border: 1px solid rgb(200, 200, 200); border-radius: 5px; padding: 5px;</string>
+    </property>
     <item>
      <property name="text">
-      <string>Disponivel</string>
+      <string>Disponível</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Indisponivel</string>
+      <string>Indisponível</string>
      </property>
     </item>
    </widget>
