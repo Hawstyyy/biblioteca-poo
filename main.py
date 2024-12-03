@@ -1,6 +1,4 @@
-import model
-import controller
-import sys  
+import sys
 from PyQt5.QtWidgets import QApplication
 from views.login import login
 
