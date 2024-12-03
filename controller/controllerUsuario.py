@@ -17,7 +17,7 @@ class controllerUsuario:
   
   def visualizarUsuario(self):
     self.db.conectar()
-    query = Usuario('teste','testando','12312121312',0, '123').visualizarUsuario('12312121312')
+    query = Usuario('any', 'any', 'any', 'any').visualizarUsuario('12312121312')
     visu = self.db.visualizarQuery(query)
     for x in visu:
       print(f'Usuário: {x}')
@@ -25,19 +25,14 @@ class controllerUsuario:
 
   def atualizarUsuario(self):
     self.db.conectar()
-    query = Usuario('teste','testando','12312121312',0, '123').updateUsuario('nome', 'teste', "nome", "enzo")
+    query = Usuario('any', 'any', 'any', 'any').updateUsuario('nome', 'teste', "nome", "enzo")
     self.db.executarQuery(query)
     self.db.desconectar()
   
   def deletarUsuario(self):
     self.db.conectar()
-    query = Usuario('teste','testando','12312121312',0, '123').deleteUsuario('nome', 'teste')
+    query = Usuario('any', 'any', 'any', 'any').deleteUsuario('nome', 'teste')
     self.db.executarQuery(query)
-    self.db.desconectar()
-
-  def checarUsuario(self,nome,cpf):
-    self.db.conectar()
-    query = Usuario(nome, cpf=cpf)
     self.db.desconectar()
   
   def pegarUsuario(self):
@@ -47,3 +42,9 @@ class controllerUsuario:
     self.db.desconectar()
     return fetch
   
+  def checarUsuario(self):
+    self.db.conectar()
+    query = Usuario('any', 'any', 'any', 'any').verificarUsuario()
+    fetch = self.db.visualizarQuery(query)  
+    self.db.desconectar()
+    return fetch

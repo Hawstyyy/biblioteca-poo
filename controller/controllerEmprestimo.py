@@ -24,3 +24,10 @@ class controllerEmprestimo:
     fetch = self.db.visualizarQuery(query)
     self.db.desconectar()
     return fetch
+
+  def pegarTudoUsers(self):
+    self.db.conectar()
+    query = Emprestimo('any','any').searchAllUsers()
+    fetch = self.db.visualizarQuery(query)
+    self.db.desconectar
+    return fetch
