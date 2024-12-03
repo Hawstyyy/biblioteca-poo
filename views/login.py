@@ -20,8 +20,6 @@ class login(QMainWindow):
     cpf = self.senhaInput.text()
     fetch = self.controllerUsuario.checarUsuario()
     login = False
-    print(fetch)
-    print(len(fetch))
     for x in range (len(fetch)):
       if fetch[x]['nome'] == nome and fetch[x]['cpf'] == cpf:
         login = True

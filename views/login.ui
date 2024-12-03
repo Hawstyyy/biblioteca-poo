@@ -17,7 +17,7 @@
    <string notr="true">background-color: rgb(240, 240, 245);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="verticalLayoutWidget">
+   <widget class="QFrame" name="verticalFrame">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -26,11 +26,15 @@
       <height>130</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QLabel" name="label">
        <property name="styleSheet">
-        <string notr="true">color: rgb(50, 50, 50); font: bold 14px; margin-bottom: 5px;</string>
+        <string notr="true">color: rgb(50, 50, 50); font: bold 14px; margin-bottom: 5px;
+background-color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Nome:</string>
@@ -47,7 +51,8 @@
      <item>
       <widget class="QLabel" name="label_2">
        <property name="styleSheet">
-        <string notr="true">color: rgb(50, 50, 50); font: bold 14px; margin-bottom: 5px;</string>
+        <string notr="true">color: rgb(50, 50, 50); font: bold 14px; margin-bottom: 5px;
+background-color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>CPF:</string>
@@ -63,7 +68,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="horizontalLayoutWidget">
+   <widget class="QFrame" name="horizontalFrame">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -71,6 +76,9 @@
       <width>331</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
@@ -98,10 +106,12 @@
      <font>
       <pointsize>20</pointsize>
       <weight>75</weight>
+      <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(50, 100, 200);</string>
+     <string notr="true">color: rgb(50, 100, 200);
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Bem-vindo! Realize seu login!</string>
@@ -117,7 +127,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: white; border: 1px solid rgb(200, 200, 200); border-radius: 15px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);</string>
+     <string notr="true">background-color: white; border: 1px solid rgb(200, 200, 200); border-radius: 15px;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -127,8 +137,8 @@
     </property>
    </widget>
    <zorder>frame</zorder>
-   <zorder>verticalLayoutWidget</zorder>
-   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>verticalFrame</zorder>
+   <zorder>horizontalFrame</zorder>
    <zorder>label_3</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
