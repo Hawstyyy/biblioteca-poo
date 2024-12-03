@@ -6,6 +6,7 @@ from views.cadastroLivro import cadastroLivro
 from views.cadastroUsuario import cadastroUsuario
 from views.emprestimo import Emprestimo
 from views.visualizarLivros import visualizarLivro
+from views.visualizarUsuario import visualizarUsuario
 
 ui_file = 'biblioteca-poo\\views\\main_window.ui'
 
@@ -17,10 +18,12 @@ class mainwindow(QMainWindow):
     self.cadastroUsuario.clicked.connect(self.clicked2)
     self.cadastroEmprestimo.clicked.connect(self.clicked3)
     self.visualizarLivro.clicked.connect(self.clicked4)
+    self.visualizarUsuario.clicked.connect(self.clicked5)
     self.cadastroLivro = cadastroLivro()
     self.cadastroUsuario = cadastroUsuario()
     self.Emprestimo = Emprestimo()
     self.visualizarLivro = visualizarLivro()
+    self.visualizarUsuario = visualizarUsuario()
   
   def clicked1(self):
     self.cadastroLivro.show()
@@ -33,3 +36,6 @@ class mainwindow(QMainWindow):
 
   def clicked4(self):
     self.visualizarLivro.show()
+  
+  def clicked5(self):
+    self.visualizarUsuario.show()

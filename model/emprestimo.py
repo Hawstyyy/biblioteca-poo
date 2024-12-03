@@ -9,5 +9,9 @@ class Emprestimo:
   def searchAll(self):
     return 'select * from livro'
 
+  def searchAllUsers(self):
+    return 'select * from usuario'
+
   def inserirEmprestimo(self, usuario, titulo):
-    return f'insert into emprestimo(nome, titulo) values ("{usuario}", "{titulo}");'
+    return f'''insert into emprestimo(nome, titulo) values ("{usuario}", "{titulo}");
+    update livro set status = "Indisponível" where titulo = "{titulo}"'''

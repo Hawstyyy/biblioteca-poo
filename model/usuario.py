@@ -27,5 +27,8 @@ class Usuario:
 
     def searchUsuario(self):
         return 'select nome from usuario'
+    
+    def verificarUsuario(self):
+        return 'select nome, cpf from usuario'
 
 Usuario.__name__ = 'Usuario'
